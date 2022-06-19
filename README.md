@@ -18,6 +18,13 @@ Your application must make use of the following libraries:
 - jasmine from npm for testing
 
 
+
+## Dependencies
+
+```npm i cors ```
+```npm i --save-dev @types/cors ```
+
+
 ## Disclaimer
 
 - Disclaimer: This is a proposal or test project and your use of the code is under your own accountability.

@@ -13,7 +13,6 @@ const {
 } = process.env
 
 let client : Pool = new Pool();
-console.log(ENV)
 
 if(ENV === 'test') {
   client = new Pool({
@@ -22,6 +21,7 @@ if(ENV === 'test') {
     user: POSTGRES_USER,
     password: POSTGRES_PASSWORD,
   })
+  console.log("ENV", ENV);
 }
 
 if(ENV === 'dev') {
@@ -31,6 +31,8 @@ if(ENV === 'dev') {
     user: POSTGRES_USER,
     password: POSTGRES_PASSWORD,
   })
+
+  console.log("My ENV", ENV);
 }
 
 export default client
